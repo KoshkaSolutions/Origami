@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Origami</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="sign_in">Voiti</string>
+    <string name="green_theme">Green Theme</string>
+    <string name="purple_theme">Purple Theme</string>
+    <string name="use_theme_header">Use theme:</string>
+    <string name="logo_header">Logo:</string>
+    <string name="firebase_logo_label">Firebase Auth</string>
+    <string name="google_logo_label">Google</string>
+    <string name="no_logo_label">None</string>
+    <string name="auth_providers_header">Use auth providers:</string>
+    <string name="email_label">Email</string>
+    <string name="facebook_label">Facebook</string>
+    <string name="facebook_label_missing_config">Facebook - configuration missing</string>
+    <string name="google_label">Google</string>
+    <string name="google_label_missing_config">Google - configuration missing</string>
+    <string name="google_tos_label">Google TOS</string>
+    <string name="firebase_tos_label">Firebase TOS</string>
+    <string name="tos_header">Terms of Service URL:</string>
+    <string name="unknown_response">Unexpected onActivityResult response code</string>
+    <string name="ok_label">OK</string>
+    <string name="unknown_sign_in_response">Unknown response from AuthUI sign-in</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="signed_in_header">My Profile</string>
+    <string name="sign_out">Sign out</string>
+    <string name="delete_account_label">Delete account</string>
+    <string name="sign_out_failed">Sign out failed</string>
+    <string name="delete_account_failed">Delete account failed</string>
+    <string name="user_profile_header">User profile:</string>
+    <string name="profile_picture_content_desc">Profile picture</string>
+    <string name="default_theme">Default theme</string>
+    <string name="configuration_required">Configuration is required - see README.md</string>
+    <string name="action_profile">Profile</string>
+    <string name="choose_language">Choose the language</string>
+</resources>

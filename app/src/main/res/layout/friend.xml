@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+<LinearLayout
+    android:id="@+id/friend"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="Friend Name" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Small"
+        android:id="@+id/friend_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Friend Email" />
+
+</LinearLayout>
+</RelativeLayout>

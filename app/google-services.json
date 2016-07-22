@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "453327108807",
+    "firebase_url": "https://origami-69f3d.firebaseio.com",
+    "project_id": "origami-69f3d",
+    "storage_bucket": "origami-69f3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453327108807:android:74312cf3bf062819",
+        "android_client_info": {
+          "package_name": "com.koshka.origami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453327108807-71f44g6v9h52onsq34iaaiunf3q233qm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.koshka.origami",
+            "certificate_hash": "A68474D3B6E6EF04E4C8425EA4545D38603C9536"
+          }
+        },
+        {
+          "client_id": "453327108807-ft9rdbtrdahiaut9g76t44tk58bgghu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8xzCKOighO4hUDDyQ2OkGwopAfzWTu0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453327108807-ft9rdbtrdahiaut9g76t44tk58bgghu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

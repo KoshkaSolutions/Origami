@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply from: "../common/constants.gradle"
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "${project.ext.buildtools}"
+    defaultConfig {
+        applicationId "com.koshka.origami"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        preDexLibraries true
+        javaMaxHeapSize "3g"
+        incremental true
+        dexInProcess = true
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:${project.ext.support_library_version}"
+    compile "com.android.support:design:${project.ext.support_library_version}"
+    compile "com.android.support:recyclerview-v7:${project.ext.support_library_version}"
+    compile "com.android.support:support-v4:${project.ext.support_library_version}"
+
+    compile project(path: ':auth')
+    compile project(path: ':database')
+
+    //FIREBASE
+    compile "com.google.firebase:firebase-database:${project.ext.firebase_version}"
+    compile "com.google.firebase:firebase-auth:${project.ext.firebase_version}"
+    compile "com.google.android.gms:play-services-auth:${project.ext.firebase_version}"
+
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+
+    //UI from github
+    compile 'me.relex:circleindicator:1.2.1@aar'
+
+    compile 'com.google.android.gms:play-services:9.2.1'
+}
+apply plugin: 'com.google.gms.google-services'

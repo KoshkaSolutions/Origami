@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:id="@+id/friendListView"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/AppTheme" />
+
+    <EditText
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:ems="10"
+        android:id="@+id/friendEmail"
+        android:layout_below="@+id/friendListView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Friend"
+        android:id="@+id/add_friend_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/friendEmail"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Friend"
+        android:id="@+id/delete_friend_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/add_friend_button"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/userResult"
+        android:layout_below="@+id/add_friend_button"
+        android:layout_alignRight="@+id/add_friend_button"
+        android:layout_alignEnd="@+id/add_friend_button"
+        android:layout_marginTop="44dp" />
+
+</RelativeLayout>
